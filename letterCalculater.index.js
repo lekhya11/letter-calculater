@@ -4,19 +4,16 @@ import './index.css'
 
 class LettersCalculator extends Component {
   state = {
-    count: 0,
+    inputPhrase = " ",
   }
 
   onChangeInput = event => {
-    if (event === '') {
-      this.setState({count: 0})
-    } else {
-      this.setState(prevState => ({count: prevState.count + 1}))
-    }
+    const {value} = event.traget
+    this.setState({inputPhrase: value})
   }
 
   render() {
-    const {count} = this.state
+    const {inputPhrase} = this.state
     return (
       <div className="app-container">
         <div className="container">
@@ -33,7 +30,7 @@ class LettersCalculator extends Component {
               onChange={this.onChangeInput}
             />
             <button type="button" className="letters-button">
-              No.of Letters:{count}
+             <p> No.of Letters:{inputPhrase.length} </p>
             </button>
           </div>
           <div>
