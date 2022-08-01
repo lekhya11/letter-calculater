@@ -1,0 +1,61 @@
+.app-container {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+.calculate-con {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+}
+.heading {
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'Roboto';
+  font-size: 50px;
+}
+.label {
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: #e4e7eb;
+}
+.letters-button {
+  color: #219a6f;
+  font-family: 'Roboto';
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 8px;
+  height: 50px;
+  width: 150px;
+  outline: none;
+  font-weight: 700;
+}
+.input-value {
+  height: 30px;
+  font-family: 'Roboto';
+  width: 200px;
+  color: #e4e7eb;
+  border-radius: 5px;
+  border: 2px solid #e4e7eb;
+  background-color: transparent;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 3px;
+  height: 30px;
+}
+.image {
+  height: 500px;
+  width: 500px;
+}
